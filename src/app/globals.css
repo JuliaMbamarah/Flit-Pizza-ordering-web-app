@@ -1,0 +1,356 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "bootstrap/dist/css/bootstrap.min.css";
+/* NavBar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  z-index: 1000;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+}
+
+.brand-logo {
+  width: 100px;
+}
+
+.pizzaheader {
+  width: 200px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cart-badge {
+  font-size: 1rem;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  color: #000;
+}
+
+span {
+  color: red;
+}
+
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.textarea {
+  width: 45%;
+}
+
+.imgarea {
+  position: relative;
+}
+
+button {
+  background-color: gold;
+  color: white;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.dailyfresh {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dtextarea {
+  font-size: 25px;
+  width: 33%;
+}
+
+.pizzagarlic img {
+  width: 50px;
+  margin-top: 120px;
+}
+
+.dtextarea h3 {
+  font-size: 40px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.food {
+  border: 1px solid gray;
+  box-shadow: 1px 0px 1px #888888;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 50px 20px 50px 20px;
+}
+
+.nameprice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: grid;
+  grid: auto / auto auto auto;
+  justify-content: space-evenly;
+  grid-column-gap: 20px;
+}
+
+.smallpizzaimg {
+  width: 150px;
+}
+
+.onionsimg {
+  width: 80px;
+}
+
+.loweringedients {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.ingredients {
+  width: 70%;
+  z-index: 2;
+  position: relative;
+}
+
+.yellow {
+  width: 100%;
+  height: 100vh;
+  background-color: gold;
+  position: absolute;
+  border-radius: 50%;
+  top: -40px;
+  right: -270px;
+  z-index: 1;
+}
+
+.values {
+  display: flex;
+}
+
+.strength {
+  background-color: cornsilk;
+  position: relative;
+}
+
+.pizzastrength {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.client {
+  border: 1px solid gray;
+  box-shadow: 1px 0px 1px #888888;
+  border-radius: 8px;
+  padding: 50px 50px 50px 50px;
+}
+
+.client img {
+  margin: 0 auto;
+  display: block;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.footer {
+  display: flex;
+  background-color: cornsilk;
+  justify-content: space-between;
+}
+
+.filterbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.resultsdefault {
+  display: flex;
+  gap: 50px;
+}
+
+.text-ash {
+  color: gray;
+}
+
+.singleburger,
+.newpizza,
+.greekpizza {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.addcart {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.addcartbtn {
+  border-radius: 24px;
+}
+
+.addcartbtn:hover {
+  background-color: red;
+  border-radius: 24px;
+  border-color: red;
+}
+
+.small,
+.medium,
+.large {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.small > .tag,
+.medium > .tag,
+.large > .tag {
+  position: absolute;
+  border: 1px solid black;
+  top: -10;
+  right: -20;
+}
+
+.tag > p {
+  font-size: 13px;
+}
+
+.inputcover {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.bloginput {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: rgb(216, 221, 222);
+}
+
+.blogbtn {
+  width: 300px;
+  border-radius: 0;
+}
+
+td {
+  width: 10%;
+}
+
+tr {
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.carttable {
+  width: 100%;
+}
+
+.cashdelivery {
+  border-radius: 0px;
+  width: 300px;
+  color: lightseagreen;
+}
+
+.paypal {
+  border-radius: 0px;
+  width: 300px;
+  color: darkblue;
+  font-style: italic;
+}
+
+.paypal:hover {
+  border-radius: 0px;
+  background-color: rgb(244, 219, 76);
+  width: 300px;
+  color: darkblue;
+  font-style: italic;
+}
+
+.paypal span {
+  color: darkcyan;
+}
+
+.cartpayout {
+  box-sizing: border-box;
+  width: 350px;
+}
+
+.cart {
+  justify-content: space-between;
+}
+
+.icons {
+  gap: 8px;
+}
+
+.indices {
+  position: absolute;
+  right: 7px;
+  top: 42px;
+  font-size: 10px;
+}
+
+.select {
+  width: 300px;
+}
+
+.paymentcard {
+  position: absolute;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 40%;
+  height: 70vh;
+  top: 130px;
+  right: 400px;
+}
+
+.cartpayout {
+  position: absolute;
+  right: -400px;
+}

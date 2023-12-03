@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Burger pizza",
+    "price": 20,
+    "description": "burger pizza",
+    "img": "/images/burgerpizza.jpg",
+    "link": "../singleburger"
+  },
+
+  {
+    "name": "Burger pizza",
+    "price": 20,
+    "description": "burger pizza",
+    "img": "/images/burgerpizza.jpg",
+    "link": "../singleburger"
+  },
+
+  {
+    "name": "New pizza",
+    "price": 10,
+    "description": "a new pizza",
+    "img": "/images/smallpizza.png",
+    "link": "../newpizza"
+  },
+
+  {
+    "name": "Greek pizza",
+    "price": 40,
+    "description": "a Greek pizza",
+    "img": "/images/greekpizza.png",
+    "link": "../greekpizza"
+  }
+]
