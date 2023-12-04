@@ -7,12 +7,9 @@ import SingleBurger from "@/app/singleburger/page";
 
 function NavBar() {
   const [cartItems, setCartItems] = useState(0);
-  function SingleBurger() {
-    let numberOfProduct = document.getElementById("inputcart");
-    let newcartitems = numberOfProduct.value;
-
+  
     function addtocart() {
-      setCartItems(cartItems + newcartitems);
+      setCartItems(cartItems + 1);
     }
 
     function removefromcart() {
