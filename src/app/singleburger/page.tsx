@@ -63,7 +63,7 @@ function SingleBurger() {
             />
             <button
               className="addcartbtn btn btn-warning ps-3 pe-3 me-3 rounded-5 text-white fw-bold"
-              onClick={addtocart}
+              
             >
               ADD TO CART
             </button>
