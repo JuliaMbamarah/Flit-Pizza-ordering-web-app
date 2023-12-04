@@ -16,6 +16,13 @@ function Food({ name, price, img, description }) {
       <Button />
     </div>
   );
+
+  Food.propTypes = {
+  name: PropTypes.string,
+  img: PropTypes.string,
+  price: PropTypes.number,
+  description: PropTypes.string,
+};
 }
 
 export default Food;
