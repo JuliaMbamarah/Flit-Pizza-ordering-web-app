@@ -1,8 +1,7 @@
-"use client"
-
+"use client";
 import { FC } from 'react';
 import Button from "./button";
-import NextLink from "next/link";
+import Link from "next/link";
 import "../app/globals.css";
 
 interface ProductFoodProps {
@@ -10,15 +9,18 @@ interface ProductFoodProps {
   price?: number;
   img?: string;
   description?: string;
-  link?: NextLink;
+  link?: string;
 }
 
 const ProductFood: FC<ProductFoodProps> = ({ name, price, img, description, link }) => {
+  // Convert string link to URL object
+  const href = link ? new URL(link) : "";
+
   return (
     <div className="food">
-      <NextLink href={link}>
+      <Link href={href}>
         <img src={img} alt={`${name} Image`} />
-      </NextLink>
+      </Link>
       <div className="nameprice mb-2">
         <h4 className="foodname fw-bold">{name}</h4>
         <p className="foodprice text-danger fw-bold">${price}</p>
@@ -31,4 +33,3 @@ const ProductFood: FC<ProductFoodProps> = ({ name, price, img, description, link
 }
 
 export default ProductFood;
-          
