@@ -1,13 +1,19 @@
 "use client";
 import PropTypes from 'prop-types';
-import { useState } from "react";
-import "../app/globals.css";
+import { FC } from 'react';
 import Button from "./button";
 
-function Food({ name, price, img, description }) {
+interface FoodProps {
+  name?: string;
+  price?: number;
+  img?: string;
+  description?: string;
+}
+
+const Food: FC<FoodProps> = ({ name, price, img, description }) => {
   return (
     <div className="food">
-      <img src={img} />
+      <img src={img} alt={`${name} Image`} />
       <div className="nameprice mb-2">
         <h4 className="foodname fw-bold">{name}</h4>
         <p className="foodprice text-danger fw-bold">${price}</p>
@@ -27,4 +33,4 @@ Food.propTypes = {
 };
 
 export default Food;
-  
+    
