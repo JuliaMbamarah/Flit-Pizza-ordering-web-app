@@ -1,17 +1,25 @@
 "use client";
-import { useState } from "react";
+import { FC } from 'react';
 import Button from "./button";
 import Link from "next/link";
 import "../app/globals.css";
 
-function ProductFood({ name, price, img, description, link }) {
+interface ProductFoodProps {
+  name?: string;
+  price?: number;
+  img?: string;
+  description?: string;
+  link?: string;
+}
+
+const ProductFood: FC<ProductFoodProps> = ({ name, price, img, description, link }) => {
   return (
     <div className="food">
-    <Link href={link}>
-        <img src={img} />
+      <Link href={link}>
+        <img src={img} alt={`${name} Image`} />
       </Link>
       <div className="nameprice mb-2">
-        <h4 className="foodname  fw-bold">{name}</h4>
+        <h4 className="foodname fw-bold">{name}</h4>
         <p className="foodprice text-danger fw-bold">${price}</p>
       </div>
       ⭐⭐⭐⭐⭐
