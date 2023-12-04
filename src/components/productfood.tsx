@@ -14,7 +14,7 @@ interface ProductFoodProps {
 
 const ProductFood: FC<ProductFoodProps> = ({ name, price, img, description, link }) => {
   // Convert string link to URL object
-  const href = link ? new URL(link) : "";
+  
 
   return (
     <div className="food">
