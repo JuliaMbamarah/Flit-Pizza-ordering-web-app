@@ -18,7 +18,7 @@ const ProductFood: FC<ProductFoodProps> = ({ name, price, img, description, link
 
   return (
     <div className="food">
-      <Link href={link}>
+      <Link href={"link"}>
         <img src={img} alt={`${name} Image`} />
       </Link>
       <div className="nameprice mb-2">
