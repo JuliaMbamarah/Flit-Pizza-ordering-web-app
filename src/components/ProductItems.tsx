@@ -8,9 +8,10 @@ import data from "../../public/data.json";
  */
 
 const ProductItem = () =>
-  data.map((data) => (
+  data.map((data, index) => (
     <ProductFood
-      name={data.name}
+      key={index} 
+     name={data.name}
       img={data.img}
       price= {65}
       description={data.description}
