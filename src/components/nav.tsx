@@ -19,7 +19,7 @@ function NavBar() {
         setCartItems(0);
       }
     }
-  }
+  
 
   return (
     <nav className="navbar">
