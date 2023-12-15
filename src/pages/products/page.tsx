@@ -1,23 +1,20 @@
-import NavBar from "../components/nav";
-import HomePage from "../components/homepage";
 import DailyFresh from "@/components/dailyfresh";
 import Menu from "@/components/menu";
 import Strength from "@/components/strength";
 import Testimonial from "@/components/testimonial";
 import Footer from "@/components/footer";
-import Layout from "./layout";
+import FilterBar from "@/components/filterbar";
+import MenuItem from "@/components/ProductMenu";
+import Layout from "@/pages/layout";
+import "../../app/globals.css";
 
 export default function Home() {
   return (
     <div>
-      <HomePage />
-      <br />
-      <DailyFresh />
-      <br />
-      <Menu />
-      <br />
-      <Strength />
-      <Testimonial />
+      <Layout>
+        <FilterBar />
+        <MenuItem />
+      </Layout>
     </div>
   );
 }

@@ -3,23 +3,23 @@ import { useState } from "react";
 import "../app/globals.css";
 import { FaCartShopping } from "react-icons/fa6";
 import { FiSearch } from "react-icons/fi";
-import SingleBurger from "@/app/singleburger/page";
+import SingleBurger from "@/pages/singleburger/page";
+import Link from "next/link";
 
 function NavBar() {
   const [cartItems, setCartItems] = useState(0);
-  
-    function addtocart() {
-      setCartItems(cartItems + 1);
-    }
 
-    function removefromcart() {
-      if (cartItems > 0) {
-        setCartItems(cartItems - 1);
-      } else {
-        setCartItems(0);
-      }
+  function addtocart() {
+    setCartItems(cartItems + 1);
+  }
+
+  function removefromcart() {
+    if (cartItems > 0) {
+      setCartItems(cartItems - 1);
+    } else {
+      setCartItems(0);
     }
-  
+  }
 
   return (
     <nav className="navbar">
@@ -30,17 +30,19 @@ function NavBar() {
       <img className="pizzaheader" src="/images/pizzaheader.png" alt="" />
 
       <div className="nav-links">
-        <a href="/">Home</a>
-        <a href="/products">Products</a>
-        <a href="/about">Pages</a>
-        <a href="/blog">Blog</a>
-        <a href="/contact">Contact</a>
+        <Link href="/">Home</Link>
+        <Link href="/products/page">Products</Link>
+        <Link href="/about/page">Pages</Link>
+        <Link href="/blog/page">Blog</Link>
+        <Link href="/contact/page">Contact</Link>
         <a className="search-icon mt-1">
           <FiSearch />
         </a>
-        <a href="/cart" className="cartbadge">
-          <FaCartShopping style={{ color: "blue", fontSize: "27px" }} />
-        </a>
+        <Link href="/cart">
+          <a className="cartbadge">
+            <FaCartShopping style={{ color: "blue", fontSize: "27px" }} />
+          </a>
+        </Link>
         <div className="indices bg-danger border border-danger pe-1 ps-1 rounded-circle text-white">
           {cartItems}
         </div>

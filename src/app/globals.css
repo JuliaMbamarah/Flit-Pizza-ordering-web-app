@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import "bootstrap/dist/css/bootstrap.min.css";
 /* NavBar.css */
 
@@ -30,6 +27,7 @@
   justify-content: space-between;
 }
 
+.nav-links Link,
 .nav-links a {
   color: #000;
   text-decoration: none;
@@ -323,6 +321,7 @@ tr {
 
 .cart {
   justify-content: space-between;
+  position: relative;
 }
 
 .icons {
@@ -353,4 +352,36 @@ tr {
 .cartpayout {
   position: absolute;
   right: -400px;
+}
+
+.cartcontainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.5px;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup#active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
+}
+
+.cartcontainer#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
 }

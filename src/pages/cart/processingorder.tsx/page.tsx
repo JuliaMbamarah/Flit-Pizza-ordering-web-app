@@ -3,7 +3,8 @@ import Food from "@/components/food";
 import data from "../../../../public/data.json";
 import FoodItem from "@/components/fooditem";
 import ProductItem from "@/components/ProductItems";
-import Layout from "../../layout";
+import Layout from "@/pages/layout";
+import "../../../app/globals.css";
 
 function ProcessingOrder() {
   return (

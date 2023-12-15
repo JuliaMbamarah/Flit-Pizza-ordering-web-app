@@ -4,6 +4,7 @@ import Strength from "@/components/strength";
 import Testimonial from "@/components/testimonial";
 import Footer from "@/components/footer";
 import FilterBar from "@/components/filterbar";
+import "../../app/globals.css";
 import MenuItem from "@/components/ProductMenu";
 
 export default function Blog() {
