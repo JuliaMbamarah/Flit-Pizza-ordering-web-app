@@ -5,7 +5,7 @@ import Menu from "@/components/menu";
 import Strength from "@/components/strength";
 import Testimonial from "@/components/testimonial";
 import Footer from "@/components/footer";
-import Layout from "./pages/layout";
+import Layout from "./layout";
 import "../app/globals.css";
 
 export default function Home() {
