@@ -38,7 +38,7 @@ function NavBar() {
         <a className="search-icon mt-1">
           <FiSearch />
         </a>
-        <Link href="/cart">
+        <Link href="/cart/page">
           <a className="cartbadge">
             <FaCartShopping style={{ color: "blue", fontSize: "27px" }} />
           </a>

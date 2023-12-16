@@ -6,12 +6,11 @@ function Order() {
   const openWindows = () => {
     window.open("https://www.sandbox.paypal.com/signin", "_blank");
   };
+
   function toggle() {
-    var blur = window.opener.document.getElementById("blur");
-    blur.classList.toggle("active");
-    var popup = window.opener.getElementById("popup");
-    popup.classList.toggle("active");
+    window.opener.togglePopup();
   }
+
   return (
     <div>
       <button

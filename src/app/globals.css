@@ -339,19 +339,9 @@ tr {
   width: 300px;
 }
 
-.paymentcard {
-  position: absolute;
-  border: 1px solid black;
-  margin: 0 auto;
-  width: 40%;
-  height: 70vh;
-  top: 130px;
-  right: 400px;
-}
-
 .cartpayout {
   position: absolute;
-  right: -400px;
+  right: 0px;
 }
 
 .cartcontainer {

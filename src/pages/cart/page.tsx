@@ -11,6 +11,14 @@ import "../../app/globals.css";
 function Cart() {
   const [buttonInfo, setButtonInfo] = useState(true);
 
+  function togglePopup() {
+    var blur = document.getElementById("blur")!;
+    blur.classList.toggle("active");
+
+    var popup = document.getElementById("popup")!;
+    popup.classList.toggle("active");
+  }
+
   return (
     <div className="cartcontainer">
       <Layout>
@@ -38,29 +46,27 @@ function Cart() {
             </table>
           </div>
 
-          <div className="paymentcard">
-            <div className="cartpayout bg-dark p-4 text-white">
-              <p className="fw-bold fs-2 pb-2 text-white">CART TOTAL</p>
-              <p>
-                <span className="fw-bold text-white">Subtotal: $</span>160
-              </p>
-              <p>
-                <span className="fw-bold text-white">Discount: $</span>79.60
-              </p>
-              <p>
-                <span className="fw-bold text-white">Total: $</span>160
-              </p>
-              {buttonInfo ? (
-                <button
-                  onClick={() => setButtonInfo(false)}
-                  className="btn paypal bg-warning d-block fw-bold"
-                >
-                  CHECKOUT NOW!
-                </button>
-              ) : (
-                <Order />
-              )}
-            </div>
+          <div className="cartpayout bg-dark p-4 text-white">
+            <p className="fw-bold fs-2 pb-2 text-white">CART TOTAL</p>
+            <p>
+              <span className="fw-bold text-white">Subtotal: $</span>160
+            </p>
+            <p>
+              <span className="fw-bold text-white">Discount: $</span>79.60
+            </p>
+            <p>
+              <span className="fw-bold text-white">Total: $</span>160
+            </p>
+            {buttonInfo ? (
+              <button
+                onClick={() => setButtonInfo(false)}
+                className="btn paypal bg-warning d-block fw-bold"
+              >
+                CHECKOUT NOW!
+              </button>
+            ) : (
+              <Order />
+            )}
           </div>
         </div>
 
