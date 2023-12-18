@@ -1,1 +1,10 @@
-{"/_app":"pages/_app.js","/_error":"pages/_error.js","/blog/dashboard.tsx/page":"pages/blog/dashboard.tsx/page.html","/blog/page":"pages/blog/page.html","/cart/page":"pages/cart/page.html","/cart/processingorder.tsx/page":"pages/cart/processingorder.tsx/page.html","/greekpizza/page":"pages/greekpizza/page.html","/":"pages/index.html","/layout":"pages/layout.html","/newpizza/page":"pages/newpizza/page.html","/products/page":"pages/products/page.html","/singleburger/page":"pages/singleburger/page.html","/_document":"pages/_document.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/blog/dashboard/page": "pages/blog/dashboard/page.js",
+  "/singleburger/page": "pages/singleburger/page.js",
+  "/blog/page": "pages/blog/page.js",
+  "/cart/page": "pages/cart/page.js",
+  "/cart/order/page": "pages/cart/order/page.js"
+}

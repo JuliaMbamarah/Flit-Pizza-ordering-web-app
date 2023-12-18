@@ -1,0 +1,31 @@
+[
+  {
+    "price": 175,
+    "phone": "07061646491",
+    "status": "delivered"
+  },
+
+  {
+    "price": 140,
+    "phone": "07061646491",
+    "status": "On the way"
+  },
+
+  {
+    "price": 50,
+    "phone": "07061646491",
+    "status": "On the way"
+  },
+
+  {
+    "price": 150,
+    "phone": "07091273465",
+    "status": "preparing"
+  },
+
+  {
+    "price": 160,
+    "phone": "07061646491",
+    "status": "preparing"
+  }
+]

@@ -25,6 +25,7 @@
 .nav-links {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .nav-links Link,
@@ -76,13 +77,6 @@ span {
 
 .imgarea {
   position: relative;
-}
-
-button {
-  background-color: gold;
-  color: white;
-  border-radius: 12px;
-  padding: 5px;
 }
 
 .dailyfresh {
@@ -253,12 +247,13 @@ h3 {
 .large > .tag {
   position: absolute;
   border: 1px solid black;
-  top: -10;
-  right: -20;
+  top: -5px;
+  right: -10px;
 }
 
 .tag > p {
-  font-size: 13px;
+  font-size: 10px;
+  margin: 0;
 }
 
 .inputcover {
@@ -289,10 +284,29 @@ tr {
   width: 100%;
 }
 
+.carttableorder {
+  width: 90%;
+  padding-bottom: 90px;
+}
+
 .cashdelivery {
   border-radius: 0px;
   width: 300px;
   color: lightseagreen;
+  text-decoration: none;
+}
+
+.cashdelivery:hover,
+.cashdelivery:visited,
+.cashdelivery:link {
+  border-radius: 0px;
+  width: 300px;
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.paypalanchor {
+  text-decoration: none;
 }
 
 .paypal {
@@ -300,6 +314,7 @@ tr {
   width: 300px;
   color: darkblue;
   font-style: italic;
+  text-decoration: none;
 }
 
 .paypal:hover {
@@ -322,6 +337,7 @@ tr {
 .cart {
   justify-content: space-between;
   position: relative;
+  padding-bottom: 150px;
 }
 
 .icons {
@@ -331,7 +347,7 @@ tr {
 .indices {
   position: absolute;
   right: 7px;
-  top: 42px;
+  top: -5px;
   font-size: 10px;
 }
 
@@ -342,6 +358,7 @@ tr {
 .cartpayout {
   position: absolute;
   right: 0px;
+  top: 0px;
 }
 
 .cartcontainer {
@@ -356,22 +373,78 @@ tr {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
+  width: 500px;
   padding: 50px;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
+  background-color: white;
+  border: none;
 }
 
-#popup#active {
-  top: 50%;
+#popup.active {
+  top: 300px;
   visibility: visible;
   opacity: 1;
   transform: 0.5s;
+  z-index: 6000;
 }
 
-.cartcontainer#blur.active {
-  filter: blur(20px);
+#blur.active {
+  opacity: 0.3;
   pointer-events: none;
   user-select: none;
+}
+
+.processingicons {
+  width: 70%;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.preparing {
+  width: 100px;
+  height: 100px;
+}
+
+.delivery {
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.homecartcontainer {
+  position: relative;
+}
+
+.tableproductimage {
+  height: 50px;
+}
+
+.dashboard {
+  width: 100%;
+}
+
+.productstable {
+  width: 45%;
+}
+
+.orderstable {
+  width: 55%;
 }

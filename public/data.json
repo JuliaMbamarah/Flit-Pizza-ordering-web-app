@@ -4,7 +4,7 @@
     "price": 20,
     "description": "burger pizza",
     "img": "/images/burgerpizza.jpg",
-    "link": "../singleburger"
+    "link": "../singleburger/page"
   },
 
   {
@@ -12,7 +12,7 @@
     "price": 20,
     "description": "burger pizza",
     "img": "/images/burgerpizza.jpg",
-    "link": "../singleburger"
+    "link": "../singleburger/page"
   },
 
   {
@@ -20,7 +20,7 @@
     "price": 10,
     "description": "a new pizza",
     "img": "/images/smallpizza.png",
-    "link": "../newpizza"
+    "link": "../newpizza/page"
   },
 
   {
@@ -28,6 +28,6 @@
     "price": 40,
     "description": "a Greek pizza",
     "img": "/images/greekpizza.png",
-    "link": "../greekpizza"
+    "link": "../greekpizza/page"
   }
 ]

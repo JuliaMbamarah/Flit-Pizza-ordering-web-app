@@ -38,13 +38,15 @@ function NavBar() {
         <a className="search-icon mt-1">
           <FiSearch />
         </a>
-        <Link href="/cart/page">
-          <a className="cartbadge">
-            <FaCartShopping style={{ color: "blue", fontSize: "27px" }} />
-          </a>
-        </Link>
-        <div className="indices bg-danger border border-danger pe-1 ps-1 rounded-circle text-white">
-          {cartItems}
+        <div className="homecartcontainer">
+          <Link href="/cart/page" legacyBehavior>
+            <a className="cartbadge">
+              <FaCartShopping style={{ color: "blue", fontSize: "27px" }} />
+            </a>
+          </Link>
+          <div className="indices bg-danger border border-danger pe-1 ps-1 rounded-circle text-white">
+            {cartItems}
+          </div>
         </div>
       </div>
     </nav>

@@ -1,24 +1,32 @@
 "use client";
-import { FC } from 'react';
+import { FC } from "react";
 import Button from "./button";
 import Link from "next/link";
 import "../app/globals.css";
+import type { UrlObject } from "url";
+import { Url } from "next/dist/shared/lib/router/router";
 
 interface ProductFoodProps {
   name?: string;
   price?: number;
   img?: string;
   description?: string;
-  link?: string;
+  link: Url;
+  href: Url;
 }
 
-const ProductFood: FC<ProductFoodProps> = ({ name, price, img, description, link }) => {
+const ProductFood: FC<ProductFoodProps> = ({
+  name,
+  price,
+  img,
+  description,
+  link,
+}) => {
   // Convert string link to URL object
-  
 
   return (
     <div className="food">
-      <Link href={"link"}>
+      <Link href={link}>
         <img src={img} alt={`${name} Image`} />
       </Link>
       <div className="nameprice mb-2">
@@ -30,6 +38,6 @@ const ProductFood: FC<ProductFoodProps> = ({ name, price, img, description, link
       <Button />
     </div>
   );
-}
+};
 
 export default ProductFood;

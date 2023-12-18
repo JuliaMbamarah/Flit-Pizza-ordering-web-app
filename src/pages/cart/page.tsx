@@ -7,6 +7,9 @@ import ProductItem from "@/components/ProductItems";
 import Layout from "../layout";
 import Order from "@/components/processingorderbtn";
 import "../../app/globals.css";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { MouseEvent } from "react";
 
 function Cart() {
   const [buttonInfo, setButtonInfo] = useState(true);
@@ -17,6 +20,13 @@ function Cart() {
 
     var popup = document.getElementById("popup")!;
     popup.classList.toggle("active");
+  }
+
+  const router = useRouter();
+
+  function handleclick(event: MouseEvent<HTMLButtonElement>) {
+    event.preventDefault();
+    router.push("/cart/order/page");
   }
 
   return (
@@ -60,45 +70,43 @@ function Cart() {
             {buttonInfo ? (
               <button
                 onClick={() => setButtonInfo(false)}
-                className="btn paypal bg-warning d-block fw-bold"
+                className="btn bg-warning text-white w-100 d-block fw-bold rounded-4"
               >
                 CHECKOUT NOW!
               </button>
             ) : (
-              <Order />
+              <Order togglePopup={togglePopup} />
             )}
           </div>
         </div>
 
-        <div
-          className="popup border border-dark mx-auto w-50 rounded"
-          id="popup"
-        >
-          <div className="p-5 mx-auto w-100 ">
+        <div className="popup border mx-auto w-50 rounded" id="popup">
+          <div className="p-3 mx-auto">
             <p className="fs-1">You will pay $12 on delivery</p>
             <p>Name Surname</p>
             <input
               type="text"
-              className="fullname mt-2 mb-3 border border-dark w-75"
+              placeholder="John Doe"
+              className="fullname mt-2 mb-3 border border-dark w-100"
             />
             <br />
             <p>Phone Number</p>
             <input
               type="number"
-              className="phone mt-2 mb-3 border border-dark w-75"
+              placeholder="+234 703 46 36"
+              className="phone mt-2 mb-3 border border-dark w-100"
             />
             <br />
             <p>Address</p>
             <input
               type="text"
-              className="adrress border mt-2 h-25 mb-3 border-dark w-75"
+              placeholder="10 John street"
+              className="adrress border mt-2 mb-3 lh-lg border-dark w-100"
             />{" "}
             <br />
             <button
-              className=" btn mx-auto btn-warning rounded border border-dark d-block"
-              p-1
-              ps-2
-              pe-2
+              className="btn mx-auto btn-warning rounded border border-dark d-block p-1 ps-2 pe-2"
+              onClick={handleclick}
             >
               Order
             </button>
