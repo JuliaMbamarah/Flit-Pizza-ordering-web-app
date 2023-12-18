@@ -12,7 +12,6 @@ interface ProductFoodProps {
   img?: string;
   description?: string;
   link: Url;
-  href: Url;
 }
 
 const ProductFood: FC<ProductFoodProps> = ({
