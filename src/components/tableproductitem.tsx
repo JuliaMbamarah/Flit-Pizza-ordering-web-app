@@ -2,23 +2,21 @@
 import "../app/globals.css";
 import TableProduct from "./tableproducts";
 import data from "../../public/data.json";
-import { v4 as uuidv4 } from "uuid";
 
 /**
  * @component
  */
 
-const TableProductsItem = () =>
-  data.map((data, index) => (
+const TableProductsItem = () => {
+  return data.map((dataitem, index) => (
     <TableProduct
-      key={uuidv4()}
-      name={data.name}
-      img={data.img}
-      price={data.price}
+      key={index}
+      num = {index}
+      name={dataitem.name}
+      img={dataitem.img}
+      price={dataitem.price}
     />
   ));
-
-  const uniqueKey = uuidv4();
-  console.log(uniqueKey);
+};
 
 export default TableProductsItem;

@@ -35,24 +35,28 @@ function Cart() {
         <div className="cart pe-5 ps-2 mt-5" id="blur">
           <div className="carttable">
             <table>
-              <tr>
-                <td className="fw-bold">Product</td>
-                <td className="fw-bold">Name</td>
-                <td className="fw-bold">Extra</td>
-                <td className="fw-bold">Price</td>
-                <td className="fw-bold">Quantity</td>
-                <td className="fw-bold">Total</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="/images/burgerpizza.jpg" width="100px" />
-                </td>
-                <td>Burga pizza</td>
-                <td></td>
-                <td>$40</td>
-                <td>4</td>
-                <td>$160</td>
-              </tr>
+              <thead>
+                <tr>
+                  <td className="fw-bold">Product</td>
+                  <td className="fw-bold">Name</td>
+                  <td className="fw-bold">Extra</td>
+                  <td className="fw-bold">Price</td>
+                  <td className="fw-bold">Quantity</td>
+                  <td className="fw-bold">Total</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="/images/burgerpizza.jpg" width="100px" />
+                  </td>
+                  <td>Burga pizza</td>
+                  <td></td>
+                  <td>$40</td>
+                  <td>4</td>
+                  <td>$160</td>
+                </tr>
+              </tbody>
             </table>
           </div>
 

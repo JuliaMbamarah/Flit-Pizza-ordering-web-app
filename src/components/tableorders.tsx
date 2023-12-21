@@ -3,21 +3,16 @@ import PropTypes from "prop-types";
 import { FC } from "react";
 
 interface TableOrdersProps {
-  phone?: string;
-  price?: number;
+  phone: string;
+  price: number;
   description?: string;
-  key?: string;
+  num?: number;
 }
 
-const TableOrders: FC<TableOrdersProps> = ({
-  phone,
-  price,
-  description,
-  key,
-}) => {
+const TableOrders: FC<TableOrdersProps> = ({ phone, price, num, description }) => {
   return (
     <tr className="tableordersrow">
-      <td>{key}</td>
+      <td>{num}</td>
       <td>{phone}</td>
       <td>${price}</td>
       <td>cash</td>
@@ -30,10 +25,10 @@ const TableOrders: FC<TableOrdersProps> = ({
 };
 
 TableOrders.propTypes = {
-  phone: PropTypes.string,
+  phone: PropTypes.string.isRequired,
   description: PropTypes.string,
-  price: PropTypes.number,
-  key: PropTypes.string,
+  price: PropTypes.number.isRequired,
+  num: PropTypes.number,
 };
 
 export default TableOrders;

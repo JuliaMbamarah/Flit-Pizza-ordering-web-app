@@ -21,7 +21,6 @@ const ProductFood: FC<ProductFoodProps> = ({
   description,
   link,
 }) => {
-  // Convert string link to URL object
 
   return (
     <div className="food">

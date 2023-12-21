@@ -6,17 +6,16 @@ interface TableProductsProps {
   name?: string;
   price?: number;
   img?: string;
-  description?: string;
-  key?: string;
+  num?: number;
 }
 
-const TableProducts: FC<TableProductsProps> = ({ name, price, img, key }) => {
+const TableProducts: FC<TableProductsProps> = ({ name, price, img, num}) => {
   return (
     <tr className="tableproductsrow">
       <td>
         <img className="tableproductimage" src={img} alt="" />
       </td>
-      <td>{key}</td>
+      <td>{num}</td>
       <td>{name}</td>
       <td>${price}</td>
       <td>
@@ -37,7 +36,7 @@ TableProducts.propTypes = {
   name: PropTypes.string,
   img: PropTypes.string,
   price: PropTypes.number,
-  key: PropTypes.string,
+  num: PropTypes.number,
 };
 
 export default TableProducts;

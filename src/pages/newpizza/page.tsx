@@ -57,7 +57,7 @@ function NewPizza() {
               <input
                 className="border border-1 border-black ps-2 me-3"
                 type="number"
-                value="1"
+                placeholder="1"
               />
               <button className="addcartbtn btn btn-warning ps-3 pe-3 me-3 rounded-5 text-white fw-bold">
                 ADD TO CART

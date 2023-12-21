@@ -1,6 +1,6 @@
 "use client";
 import PropTypes from 'prop-types';
-import { FC } from 'react'; // Import FC (Functional Component type) from React
+import { FC } from 'react'; 
 import "../app/globals.css";
 
 interface ClientProps {

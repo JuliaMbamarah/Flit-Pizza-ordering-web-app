@@ -32,9 +32,9 @@ function NavBar() {
       <div className="nav-links">
         <Link href="/">Home</Link>
         <Link href="/products/page">Products</Link>
-        <Link href="/about/page">Pages</Link>
+        <Link href="/">Pages</Link>
         <Link href="/blog/page">Blog</Link>
-        <Link href="/contact/page">Contact</Link>
+        <Link href="/">Contact</Link>
         <a className="search-icon mt-1">
           <FiSearch />
         </a>

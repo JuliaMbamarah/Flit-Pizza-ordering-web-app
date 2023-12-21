@@ -1,15 +1,8 @@
 {
-  "/blog/dashboard/page": "pages/blog/dashboard/page.js",
-  "/blog/page": "pages/blog/page.js",
-  "/cart/order/page": "pages/cart/order/page.js",
-  "/cart/page": "pages/cart/page.js",
-  "/_error": "pages/_error.js",
-  "/": "pages/index.js",
-  "/layout": "pages/layout.js",
-  "/greekpizza/page": "pages/greekpizza/page.js",
-  "/products/page": "pages/products/page.js",
-  "/singleburger/page": "pages/singleburger/page.js",
-  "/newpizza/page": "pages/newpizza/page.js",
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js"
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/cart/page": "pages/cart/page.js",
+  "/": "pages/index.js",
+  "/cart/order/page": "pages/cart/order/page.js"
 }

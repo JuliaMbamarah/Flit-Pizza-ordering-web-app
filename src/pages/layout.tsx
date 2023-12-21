@@ -3,10 +3,10 @@ import { Inter } from "next/font/google";
 import "../app/globals.css";
 import NavBar from "@/components/nav";
 import Footer from "@/components/footer";
-import React, { ReactNode } from "react"; // Import React and ReactNode
+import React, { ReactNode } from "react";
 
 interface LayoutProps {
-  children: ReactNode; // Define children prop type
+  children: ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {

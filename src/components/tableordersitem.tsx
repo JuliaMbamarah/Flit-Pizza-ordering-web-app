@@ -2,24 +2,22 @@
 import "../app/globals.css";
 import TableOrders from "./tableorders";
 import data from "../../public/data.json";
-import order from "../../public/order.json";
-import { v4 as uuidv4 } from "uuid";
+import orderData from "../../public/order.json";
 
 /**
  * @component
  */
 
-const TableOrdersItem = () =>
-  order.map((order) => (
+const TableOrdersItem = () => {
+  return orderData.map((orderitem, index) => (
     <TableOrders
-      key={uuidv4()}
-      phone={order.phone}
-      description={order.status}
-      price={order.price}
+      key={index}
+      num ={index}
+      phone={orderitem.phone}
+      description={orderitem.status}
+      price={orderitem.price}
     />
   ));
-
-const uniqueKey = uuidv4();
-console.log(uniqueKey);
+};
 
 export default TableOrdersItem;
